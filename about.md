@@ -1,18 +1,39 @@
 ---
-layout: page
-title: About Me  # Better title
-permalink: /about/  # Standard URL
+layout: default
+title: Tao Gong
+permalink: /
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<div class="intro">
+  <div class="intro-text">
+    I am a PhD student under the supervision of Matthias Franz at the University of Western Ontario in Canada. Before that I got the Bachelor's and Master's degrees under the supervision of Xu'an Zhao at Beijing Normal University in China.
+  </div>
+  <div class="intro-image">
+    ![Profile Photo](/assets/images/profile.jpg) <!-- Add your image -->
+  </div>
+</div>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Papers
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<div class="papers">
+{% for pub in site.data.publications %}
+  <div class="paper">
+    <div class="paper-title">{{ pub.title }}</div>
+    <div class="paper-authors">{{ pub.authors }}</div>
+    <div class="paper-meta">{{ pub.journal }}, {{ pub.year }}</div>
+    {% if pub.link %}
+    <a href="{{ pub.link }}" class="paper-link">[PDF]</a>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>
+
+## Contact
+
+<div class="contact">
+  Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+</div>
 
 
-[jekyll-organization]: https://github.com/jekyll
+
+ <!-- Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) -->

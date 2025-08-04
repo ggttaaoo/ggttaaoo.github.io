@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{ site.title }}</title>
+  <meta charset="utf-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/about">About</a> |
-      <a href="/publications">Publications</a>
-    </nav>
-  </header>
-  
-  <main>
-    {{ content }}
-  </main>
+  <div class="container">
+    <header class="site-header">
+      <h1>{{ site.title }}</h1>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#papers">Papers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <footer>
-    Contact: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-  </footer>
+    <main class="page-content">
+      {{ content }}
+    </main>
+  </div>
 </body>
 </html>
