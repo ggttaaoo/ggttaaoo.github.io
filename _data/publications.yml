@@ -1,12 +1,12 @@
 - title: "Homotopy types of toric orbifolds from Weyl polytopes"
   authors: "Tao Gong"
   year: 2024
-  arxiv: "https://arxiv.org/abs/2407.16070"
+  preprint: "arxiv.org/abs/2407.16070"
 
 - title: "Toric varieties modulo reflections"
   authors: "Colin Crowley, Tao Gong, Connor Simpson"
   year: 2024
-  arxiv: "https://arxiv.org/abs/2410.14653"
+  preprint: "arxiv.org/abs/2410.14653"
  
 # - title: "Galois cohomology and Brauer groups of arithmetic schemes"
 #   authors: "Tao Gong, Michael Brown"
@@ -14,3 +14,4 @@
 #   journal: "Journal of Algebra"
 #   doi: "10.1007/s12345-022-9876"
 #   pdf: "/papers/galois2022.pdf"
+
