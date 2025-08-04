@@ -19,20 +19,22 @@ title: Tao Gong
   <section class="papers">
     <h2>Papers</h2>
     
+    {% for paper in site.data.publications %}
     <div class="paper">
-      <h3>Title of Your First Paper</h3>
-      <p class="authors">Tao Gong, Co-Author Name</p>
-      <p class="venue">Journal of Mathematics, 2023</p>
-      <a href="#" class="paper-link">[PDF]</a>
-      <a href="#" class="paper-link">[arXiv]</a>
+      <h3>{{ paper.title }}</h3>
+      <p class="authors">{{ paper.authors }}</p>
+      <p class="venue">{{ paper.journal }}, {{ paper.year }}</p>
+      {% if paper.pdf %}
+        <a href="{{ paper.pdf }}" class="paper-link">[PDF]</a>
+      {% endif %}
+      {% if paper.arxiv %}
+        <a href="{{ paper.arxiv }}" class="paper-link">[arXiv]</a>
+      {% endif %}
+      {% if paper.doi %}
+        <a href="https://doi.org/{{ paper.doi }}" class="paper-link">[DOI]</a>
+      {% endif %}
     </div>
-
-    <div class="paper">
-      <h3>Title of Your Second Paper</h3>
-      <p class="authors">Tao Gong, Co-Author Name</p>
-      <p class="venue">Conference Proceedings, 2022</p>
-      <a href="#" class="paper-link">[PDF]</a>
-    </div>
+    {% endfor %}
   </section>
 
   <!-- Education Section -->
@@ -53,7 +55,7 @@ title: Tao Gong
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:tgong23@uwo.ca">tgong23@uwo.ca</a></p>
+    <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     <p>Department of Mathematics<br>
     University of Western Ontario<br>
     London, ON, Canada</p>

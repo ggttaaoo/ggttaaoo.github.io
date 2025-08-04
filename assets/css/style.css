@@ -67,3 +67,19 @@ h2 {
 .contact p {
   margin: 5px 0;
 }
+
+/* Paper Links */
+.paper-links {
+  margin-top: 8px;
+}
+
+.paper-link {
+  display: inline-block;
+  margin-right: 12px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.paper-link:hover {
+  text-decoration: underline;
+}
