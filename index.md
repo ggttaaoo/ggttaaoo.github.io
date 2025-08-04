@@ -25,7 +25,7 @@ title: Tao Gong
       <span class="paper-title">{{ paper.title }}.</span>
       <span class="paper-year">{{ paper.year }}.</span>
       {% if paper.preprint %}
-        <span class="paper-link">Preprint available at <a href="https://arxiv.org/abs/{{ paper.preprint | remove: 'arXiv:' }}">arXiv:{{ paper.preprint | remove: 'arXiv:' }}</a>.</span>
+        Preprint available at <span class="paper-link"> <a href="https://arxiv.org/abs/{{ paper.preprint | remove: 'arXiv:' }}">arXiv:{{ paper.preprint}}</a>.</span>
       {% elsif paper.journal %}
         <span class="paper-journal">{{ paper.journal }}.</span>
         {% if paper.doi %}
