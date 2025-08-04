@@ -1,20 +1,10 @@
-- title: "Cohomological aspects of symplectic geometry"
-  authors: "Tao Gong, M. Franz"
-  journal: "Journal of Symplectic Topology"
-  year: 2023
-  pdf: "/papers/symplectic-cohomology.pdf"
-  arxiv: "https://arxiv.org/abs/1234.5678"
-  doi: "10.1234/5678"
-
-- title: "Algebraic structures in Floer theory"
-  authors: "Tao Gong, X. Zhao"
-  journal: "Advances in Mathematics"
-  year: 2022
-  pdf: "/papers/floer-theory.pdf"
-  doi: "10.4321/9876"
-
-- title: "Graded manifolds and derived brackets"
+- title: "Homotopy types of toric orbifolds from Weyl polytopes"
   authors: "Tao Gong"
-  journal: "Proceedings of the AMS"
-  year: 2021
-  arxiv: "https://arxiv.org/abs/1234.9876"
+  year: 2024
+  arxiv: "https://arxiv.org/abs/2407.16070"
+
+- title: "Toric varieties modulo reflections"
+  authors: "Colin Crowley, Tao Gong, Connor Simpson"
+  year: 2024
+  arxiv: "https://arxiv.org/abs/2410.14653"
+ 

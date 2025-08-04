@@ -37,7 +37,7 @@ title: Tao Gong
     {% endfor %}
   </section>
 
-  <!-- Education Section -->
+  <!-- Education Section
   <section class="education">
     <h2>Education</h2>
     <div class="degree">
@@ -50,12 +50,13 @@ title: Tao Gong
       <p>Beijing Normal University, 20XX-20XX</p>
       <p>Supervisor: Xu'an Zhao</p>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p>Office: MC275D</a></p>
     <p>Department of Mathematics<br>
     University of Western Ontario<br>
     London, ON, Canada</p>
