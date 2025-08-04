@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/publications">Publications</a>
+    </nav>
+  </header>
+  
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    Contact: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </footer>
+</body>
+</html>
