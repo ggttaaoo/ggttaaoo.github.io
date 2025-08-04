@@ -68,7 +68,7 @@ h2 {
   margin: 5px 0;
 }
 
-/* Paper Links */
+/* Paper Links
 .paper-links {
   margin-top: 8px;
 }
@@ -76,6 +76,49 @@ h2 {
 .paper-link {
   display: inline-block;
   margin-right: 12px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.paper-link:hover {
+  text-decoration: underline;
+} */
+
+
+.paper-list {
+  counter-reset: paper-counter;
+  padding-left: 0;
+  list-style: none;
+}
+
+.paper {
+  counter-increment: paper-counter;
+  margin-bottom: 1.2em;
+  position: relative;
+  padding-left: 2em;
+  line-height: 1.5;
+}
+
+.paper::before {
+  content: counter(paper-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.paper-authors {
+  font-weight: 500;
+}
+
+.paper-title {
+  font-style: italic;
+}
+
+.paper-year {
+  color: #555;
+}
+
+.paper-link {
   color: #1a73e8;
   text-decoration: none;
 }

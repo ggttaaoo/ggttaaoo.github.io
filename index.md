@@ -15,27 +15,29 @@ title: Tao Gong
     <p>I am a PhD student under the supervision of Matthias Franz at the University of Western Ontario in Canada. Before that I obtained my Bachelor's and Master's degrees under the supervision of Xu'an Zhao at Beijing Normal University in China.</p>
   </section>
 
-  <!-- Papers Section -->
-  <section class="papers">
-    <h2>Papers</h2>
-    
+ <section class="papers">
+  <h2>Papers</h2>
+  <ol class="paper-list">
     {% for paper in site.data.publications %}
-    <div class="paper">
-      <h3>{{ paper.title }}</h3>
-      <p class="authors">{{ paper.authors }}</p>
-      <p class="venue">{{ paper.journal }}, {{ paper.year }}</p>
-      {% if paper.pdf %}
-        <a href="{{ paper.pdf }}" class="paper-link">[PDF]</a>
+    <li class="paper">
+      <span class="paper-authors">{{ paper.authors }}.</span>
+      <span class="paper-title">{{ paper.title }}.</span>
+      <span class="paper-year">{{ paper.year }}.</span>
+      {% if paper.preprint %}
+        <span class="paper-link">Preprint available at <a href="https://arxiv.org/abs/{{ paper.preprint | remove: 'arXiv:' }}">arXiv:{{ paper.preprint | remove: 'arXiv:' }}</a>.</span>
+      {% elsif paper.journal %}
+        <span class="paper-journal">{{ paper.journal }}.</span>
+        {% if paper.doi %}
+          <a href="https://doi.org/{{ paper.doi }}" class="paper-link">DOI:{{ paper.doi }}</a>.
+        {% endif %}
+        {% if paper.pdf %}
+          <a href="{{ paper.pdf }}" class="paper-link">[PDF]</a>
+        {% endif %}
       {% endif %}
-      {% if paper.arxiv %}
-        <a href="{{ paper.arxiv }}" class="paper-link">[arXiv]</a>
-      {% endif %}
-      {% if paper.doi %}
-        <a href="https://doi.org/{{ paper.doi }}" class="paper-link">[DOI]</a>
-      {% endif %}
-    </div>
+    </li>
     {% endfor %}
-  </section>
+  </ol>
+</section>
 
   <!-- Education Section
   <section class="education">
@@ -56,10 +58,7 @@ title: Tao Gong
   <section class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-    <p>Office: MC275D</a></p>
-    <p>Department of Mathematics<br>
-    University of Western Ontario<br>
-    London, ON, Canada</p>
+    <p>Office: MC275D</p>
   </section>
 
 </div>
