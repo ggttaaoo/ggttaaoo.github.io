@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ggttaaoo.github.io/sitemap.xml
