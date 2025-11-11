@@ -40,20 +40,23 @@ title: Tao Gong
   </ol>
 </section>
 
-  <!-- Education Section
-  <section class="education">
-    <h2>Education</h2>
-    <div class="degree">
-      <h3>PhD in Mathematics</h3>
-      <p>University of Western Ontario, 202X-present</p>
-      <p>Supervisor: Matthias Franz</p>
-    </div>
-    <div class="degree">
-      <h3>MSc in Mathematics</h3>
-      <p>Beijing Normal University, 20XX-20XX</p>
-      <p>Supervisor: Xu'an Zhao</p>
-    </div>
-  </section> -->
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+      {% for project in site.data.projects %}
+      <li class="project">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <p>
+          🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">Run in Google Colab</a><br>
+          📄 <a href="{{ project.download_link }}" download>Download Notebook (.ipynb)</a>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
 
   <!-- Contact Section -->
   <section class="contact">
