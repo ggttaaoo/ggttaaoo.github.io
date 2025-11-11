@@ -50,7 +50,6 @@ title: Tao Gong
         <p>{{ project.description }}</p>
         <p>
           🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">Run in Google Colab</a><br>
-          📄 <a href="{{ project.download_link }}" download>Download Notebook (.ipynb)</a>
         </p>
       </li>
       {% endfor %}
