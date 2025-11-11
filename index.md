@@ -47,6 +47,9 @@ title: Tao Gong
       {% for project in site.data.projects %}
       <li class="project">
         <h3>{{ project.title }}</h3>
+        {% if project.authors %}
+        <p><em>{{ project.authors }}</em></p>
+        {% endif %}
         <p>{{ project.description }}</p>
         <p>
           🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">Run in Google Colab</a><br>
