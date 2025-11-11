@@ -4,7 +4,7 @@ title: Tao Gong
 ---
 
 <div class="header">
-  <h1>Tao Gong (Under Construction)</h1>
+  <h1>Tao Gong</h1>
   <p class="subtitle">PhD Student, University of Western Ontario</p>
 </div>
 
