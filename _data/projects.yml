@@ -7,7 +7,7 @@
 - title: Comparison and Optimization of Training Programs of Emerging Colleges Based on Students' Perspectives
   authors: "Tao Gong, Chengjie Jiao, Liuyi Yang"
   description: >
-    A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program (written in Chinese).
+    A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
   file_link: "/assets/projects/TrainingPrograms.pdf"
 
 - title: Energy profile prediction and evaluation based on the GM model and ETP criteria
@@ -15,4 +15,11 @@
   description: >
     An entry for the Contest in Modeling/Interdisciplinary Contest.
   file_link: "/assets/projects/EnergyProfilePrediction.pdf"
+
+- title: A study on school education models from the perspective of college students
+  authors: "Tao Gong, Chengjie Jiao, Liuyi Yang"
+  description: >
+    A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
+  file_link: "/assets/projects/AStudy.pdf"
+
 
