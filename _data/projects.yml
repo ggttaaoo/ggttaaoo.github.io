@@ -4,6 +4,7 @@
   description: >
     A project from the Fields Graduate Course: Introduction to Topological Data Analysis.
   colab_link: "https://colab.research.google.com/drive/1ntokz2Rhk_mRP6YA3knxs51j6QBOkmCQ?usp=sharing"
+  category: "Data Analysis"
 
 - title: Comparison and Optimization of Training Programs of Emerging Colleges Based on Students' Perspectives
   authors: "Tao Gong, Chengjie Jiao, Liuyi Yang"
@@ -11,6 +12,7 @@
   description: >
     A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
   file_link: "/assets/projects/TrainingPrograms.pdf"
+  category: "Statistics"
 
 - title: Analysis of Hurricane Impacts Based on Spatiotemporal Trajectory Big Data of Ships — A Case Study of Hurricane Sandy in the United States
   authors: "Tao Gong, Yaqiang Mo, Hongyan Wu"
@@ -18,6 +20,7 @@
   description: >
     A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
   file_link: "/assets/projects/Hurricane_Sandy_ShipData.pdf"
+  category: "Mathematical Modeling"
 
 - title: Energy profile prediction and evaluation based on the GM model and ETP criteria
   authors: "Tao Gong, Chengjie Jiao, Jing Wang"
@@ -25,13 +28,15 @@
   description: >
     An entry for the Contest in Modeling/Interdisciplinary Contest.
   file_link: "/assets/projects/EnergyProfilePrediction.pdf"
+  category: "Mathematical Modeling"
 
 - title: Parameter Calibration of CT Systems and Image Reconstruction of Unknown Media
-  authors: " Jing Ding, Tao Gong, Chengjie Jiao"
+  authors: "Jing Ding, Tao Gong, Chengjie Jiao"
   time: "2017/09"
   description: >
      A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
   file_link: "/assets/projects/CT_Calibration_Reconstruction.pdf"
+  category: "Mathematical Modeling"
 
 - title: A study on school education models from the perspective of college students
   authors: "Tao Gong, Chengjie Jiao, Liuyi Yang"
@@ -39,5 +44,4 @@
   description: >
     A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
   file_link: "/assets/projects/AStudy.pdf"
-
-
+  category: "Statistics"
