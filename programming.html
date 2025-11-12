@@ -1,0 +1,26 @@
+---
+layout: default
+title: Programming
+---
+
+<h2>Programming Projects</h2>
+
+<ul class="programming-list">
+  {% for prog in site.data.programming %}
+  <li class="programming-item">
+    <h3>{{ prog.title }}</h3>
+    {% if prog.time %}
+    <p><strong>{{ prog.time }}</strong></p>
+    {% endif %}
+    {% if prog.authors %}
+    <p><em>{{ prog.authors }}</em></p>
+    {% endif %}
+    <p>{{ prog.description }}</p>
+    {% if prog.link %}
+    <p>🔗 <a href="{{ prog.link }}" target="_blank">View on GitHub</a></p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<p><a href="/">← Back to Home</a></p>
