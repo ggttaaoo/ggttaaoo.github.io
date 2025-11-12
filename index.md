@@ -14,6 +14,7 @@ title: Tao Gong
   <section class="intro">
     <p>I am a PhD student under the supervision of Matthias Franz at the University of Western Ontario in Canada. Before that I obtained my Bachelor's and Master's degrees under the supervision of Xu'an Zhao at Beijing Normal University in China.</p>
     <p>I am interested in algebraic topology and homotopy theory. I am currently working in toric topology.</p>
+    <p>CV: <a href="/assets/files/TaoGong_CV.pdf" target="_blank" rel="noopener noreferrer">View my CV</a></p>
   </section>
 
  <section class="papers">
