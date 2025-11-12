@@ -56,16 +56,17 @@ title: Tao Gong
 
       <p>
         {% if project.colab_link %}
-        🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">Run in Google Colab</a><br>
+        🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">View on Google Colab</a><br>
         {% endif %}
-        {% if project.download_link %}
-        📄 <a href="{{ project.download_link }}" download>Download File</a>
+        {% if project.file_link %}
+        📘 <a href="{{ project.file_link }}" target="_blank" rel="noopener noreferrer">Read the Project</a>
         {% endif %}
       </p>
     </li>
     {% endfor %}
   </ul>
 </section>
+
 
 
 
