@@ -12,15 +12,22 @@
     A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
   file_link: "/assets/projects/TrainingPrograms.pdf"
 
+- title: Analysis of Hurricane Impacts Based on Spatiotemporal Trajectory Big Data of Ships — A Case Study of Hurricane Sandy in the United States
+  authors: "Tao Gong, Yaqiang Mo, Hongyan Wu"
+  time: "2018/05"
+  description: >
+    A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
+  file_link: "/assets/projects/Hurricane_Sandy_ShipData.pdf"
+
 - title: Energy profile prediction and evaluation based on the GM model and ETP criteria
   authors: "Tao Gong, Chengjie Jiao, Jing Wang"
-  time: "2017/09"
+  time: "2018/02"
   description: >
     An entry for the Contest in Modeling/Interdisciplinary Contest.
   file_link: "/assets/projects/EnergyProfilePrediction.pdf"
 
 - title: Parameter Calibration of CT Systems and Image Reconstruction of Unknown Media
-  authors: " Jing Ding, Tao Gong,Chengjie Jiao"
+  authors: " Jing Ding, Tao Gong, Chengjie Jiao"
   time: "2017/09"
   description: >
      A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
