@@ -41,23 +41,32 @@ title: Tao Gong
 </section>
 
   <!-- Projects Section -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul class="project-list">
-      {% for project in site.data.projects %}
-      <li class="project">
-        <h3>{{ project.title }}</h3>
-        {% if project.authors %}
-        <p><em>{{ project.authors }}</em></p>
+<section class="projects">
+  <h2>Projects</h2>
+  <ul class="project-list">
+    {% for project in site.data.projects %}
+    <li class="project">
+      <h3>{{ project.title }}</h3>
+
+      {% if project.authors %}
+      <p><em>{{ project.authors }}</em></p>
+      {% endif %}
+
+      <p>{{ project.description }}</p>
+
+      <p>
+        {% if project.colab_link %}
+        🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">Run in Google Colab</a><br>
         {% endif %}
-        <p>{{ project.description }}</p>
-        <p>
-          🔗 <a href="{{ project.colab_link }}" target="_blank" rel="noopener noreferrer">Run in Google Colab</a><br>
-        </p>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+        {% if project.download_link %}
+        📄 <a href="{{ project.download_link }}" download>Download File</a>
+        {% endif %}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
 
 
   <!-- Contact Section -->
