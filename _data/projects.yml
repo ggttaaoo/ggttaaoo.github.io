@@ -19,6 +19,13 @@
     An entry for the Contest in Modeling/Interdisciplinary Contest.
   file_link: "/assets/projects/EnergyProfilePrediction.pdf"
 
+- title: Parameter Calibration of CT Systems and Image Reconstruction of Unknown Media
+  authors: " Jing Ding, Tao Gong,Chengjie Jiao"
+  time: "2017/09"
+  description: >
+     A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
+  file_link: "/assets/projects/CT_Calibration_Reconstruction.pdf"
+
 - title: A study on school education models from the perspective of college students
   authors: "Tao Gong, Chengjie Jiao, Liuyi Yang"
   time: "2017/05"
