@@ -1,11 +1,18 @@
 - title: Topological Data Analysis to Support Image Analysis Tasks in Environmental Science
-  authors: "Joint with Kumar Sannidhya Shukla, Prajwal Dhondiram Udanshive"
+  authors: "Tao Gong, Kumar Sannidhya Shukla, Prajwal Dhondiram Udanshive"
   description: >
     A project from the Fields Graduate Course: Introduction to Topological Data Analysis.
   colab_link: "https://colab.research.google.com/drive/1ntokz2Rhk_mRP6YA3knxs51j6QBOkmCQ?usp=sharing"
 
 - title: Comparison and Optimization of Training Programs of Emerging Colleges Based on Students' Perspectives
-  authors: "Joint with Chengjie Jiao, Liuyi Yang"
+  authors: "Tao Gong, Chengjie Jiao, Liuyi Yang"
   description: >
-    A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program.
+    A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program (written in Chinese).
   file_link: "/assets/projects/TrainingPrograms.pdf"
+
+  - title: Energy profile prediction and evaluation based on the GM model and ETP criteria
+  authors: "Tao Gong, Chengjie Jiao, Jing Wang"
+  description: >
+    An entry for the Contest in Modeling/Interdisciplinary Contest.
+  file_link: "/assets/projects/EnergyProfilePrediction.pdf"
+
