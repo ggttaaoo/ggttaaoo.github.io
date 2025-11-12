@@ -59,14 +59,17 @@ title: Papers
     <li class="paper">
       <span class="paper-authors">{{ paper.authors }}.</span>
       <span class="paper-title">{{ paper.title }}.</span>
-      <span class="paper-year">{{ paper.year }}.</span>
-      {% if paper.pdf %}
-      <a href="{{ paper.pdf }}">[PDF]</a>
+      {% if paper.time %}
+      <span class="paper-year">{{ paper.time }}.</span>
+      {% endif %}
+      {% if paper.file_link %}
+        🔗 <a href="{{ paper.file_link }}" target="_blank">Read PDF</a>
       {% endif %}
     </li>
     {% endfor %}
   </ol>
 </section>
 {% endif %}
+
 
 <p><a href="/">← Back to Home</a></p>
