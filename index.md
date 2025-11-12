@@ -49,6 +49,10 @@ title: Tao Gong
     <li class="project">
       <h3>{{ project.title }}</h3>
 
+      {% if project.time %}
+      <p><strong>{{ project.time }}</strong></p>
+      {% endif %}
+
       {% if project.authors %}
       <p><em>{{ project.authors }}</em></p>
       {% endif %}
@@ -67,6 +71,7 @@ title: Tao Gong
     {% endfor %}
   </ul>
 </section>
+
 
 
 
