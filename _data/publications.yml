@@ -1,3 +1,6 @@
+# -------------------------
+# Preprints
+# -------------------------
 - title: "Homotopy types of toric orbifolds from Weyl polytopes"
   authors: "Tao Gong"
   year: 2024
@@ -8,21 +11,29 @@
   year: 2024
   preprint: "2410.14653"
 
-- title: Strict Fundamental Domain for Group Actions
-  authors: ""
-  time: "2025"
+# -------------------------
+# Notes
+# -------------------------
+- title: "Strict Fundamental Domain for Group Actions"
+  authors: "Tao Gong"
+  year: 2025
   note: true
   file_link: "/assets/papers/strict_fundamental_domain.pdf"
 
- 
-# - title: "Galois cohomology and Brauer groups of arithmetic schemes"
-#   authors: "Tao Gong, Michael Brown"
-#   year: 2022
-#   journal: "Journal of Algebra"
-#   doi: "10.1007/s12345-022-9876"
-#   pdf: "/papers/galois2022.pdf"
+# -------------------------
+# Theses
+# -------------------------
+- title: "Integral Cohomology of Classifying Spaces of Projective Unitary Groups"
+  authors: "Tao Gong"
+  year: 2021
+  type: "thesis"
+  degree: "Master's Thesis"
 
-# title: "Patching for étale algebras and the period-index problem for higher degree Galois cohomology groups over Hensel semi-global fields"
-#   authors: "Tao Gong, John Smith, Jane Doe"
-#   year: 2023
-#   preprint: "arXiv:2310.20119"
+- title: "Cohomology of Classifying Spaces of Rank-Two Kac–Moody Groups of Finite Type"
+  authors: "Tao Gong"
+  year: 2018
+  type: "thesis"
+  degree: "Bachelor's Thesis"
+
+
+ 
