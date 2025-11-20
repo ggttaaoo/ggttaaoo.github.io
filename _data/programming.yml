@@ -1,5 +1,5 @@
 - title: RealQuo.jl
-  authors: "Tao Gong, Colin Crowley, Connor Simpson"
+  authors: "Colin Crowley, Tao Gong, Connor Simpson"
   time: "2025/10"
   description: "A Julia package for quotients of real toric permutohedron varieties."
   link: "https://github.com/ggttaaoo/RealQuo"
