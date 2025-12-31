@@ -11,7 +11,7 @@
   time: "2018/05"
   description: >
     A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
-  file_link: "/assets/projects/TrainingPrograms.pdf"
+  #file_link: "/assets/projects/TrainingPrograms.pdf"
   category: "Statistics"
 
 - title: Analysis of Hurricane Impacts Based on Spatiotemporal Trajectory Big Data of Ships — A Case Study of Hurricane Sandy in the United States
@@ -19,7 +19,7 @@
   time: "2018/05"
   description: >
     A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
-  file_link: "/assets/projects/Hurricane_Sandy_ShipData.pdf"
+  #file_link: "/assets/projects/Hurricane_Sandy_ShipData.pdf"
   category: "Mathematical Modeling"
 
 - title: Energy profile prediction and evaluation based on the GM model and ETP criteria
@@ -35,7 +35,7 @@
   time: "2017/09"
   description: >
      A project for the mathematical modeling competition at Beijing Normal University. (Written in Chinese.)
-  file_link: "/assets/projects/CT_Calibration_Reconstruction.pdf"
+  #file_link: "/assets/projects/CT_Calibration_Reconstruction.pdf"
   category: "Mathematical Modeling"
 
 - title: A study on school education models from the perspective of college students
@@ -43,5 +43,5 @@
   time: "2017/05"
   description: >
     A statistical project completed during the Undergraduate Research Training & Creative Ability Cultivation program. (Written in Chinese.)
-  file_link: "/assets/projects/AStudy.pdf"
+  #file_link: "/assets/projects/AStudy.pdf"
   category: "Statistics"
