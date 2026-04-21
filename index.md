@@ -32,3 +32,7 @@ title: Tao Gong
     <p>Office: MC275D</p>
   </section>
 </div>
+
+<p style="font-size: 0.9em; color: gray; text-align: center; margin-top: 2em;">
+  Last updated: {{ site.time | date: "%B %Y" }}
+</p>
