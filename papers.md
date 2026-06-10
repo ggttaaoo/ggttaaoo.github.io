@@ -10,7 +10,7 @@ title: Papers
 <!-- ============================= -->
 <h3>Publications and Preprints</h3>
 
-<ul class="paper-list">
+<ol class="paper-list">
 
 {% assign items = site.data.publications %}
 
@@ -38,11 +38,14 @@ title: Papers
       {% endif %}
 
     {% else %}
-      arXiv:{{ p.preprint }}.
+      Available at
+      <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
+        arXiv:{{ p.preprint }}
+      </a>.
     {% endif %}
 
     {% if p.preprint and p.journal %}
-      Also available at
+      Available at
       <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
         arXiv:{{ p.preprint }}
       </a>.
@@ -58,7 +61,7 @@ title: Papers
 
 {% endfor %}
 
-</ul>
+</ol>
 
 
 <!-- ============================= -->
@@ -68,7 +71,7 @@ title: Papers
 {% if notes.size > 0 %}
 <h3>Notes</h3>
 
-<ul class="paper-list">
+<ol class="paper-list">
 
   {% for n in notes %}
   <li>
@@ -90,7 +93,7 @@ title: Papers
   </li>
   {% endfor %}
 
-</ul>
+</ol>
 {% endif %}
 
 
@@ -101,7 +104,7 @@ title: Papers
 {% if theses.size > 0 %}
 <h3>Theses</h3>
 
-<ul class="paper-list">
+<ol class="paper-list">
 
   {% for t in theses %}
   <li>
@@ -119,7 +122,7 @@ title: Papers
   </li>
   {% endfor %}
 
-</ul>
+</ol>
 {% endif %}
 
 
