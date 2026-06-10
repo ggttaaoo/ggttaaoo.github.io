@@ -5,9 +5,7 @@ title: Papers
 
 <h2>Papers</h2>
 
-<!-- ============================= -->
 <!-- Publications + Preprints -->
-<!-- ============================= -->
 <h3>Publications and Preprints</h3>
 
 <ol class="paper-list">
@@ -18,7 +16,7 @@ title: Papers
 
   {% unless p.note or p.type == "thesis" %}
 
-  <li>
+  <li class="paper">
 
     {% if p.authors and p.authors != "" %}
       ({{ p.authors }})
@@ -38,21 +36,14 @@ title: Papers
       {% endif %}
 
     {% else %}
-      Available at
-      <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
-        arXiv:{{ p.preprint }}
-      </a>.
+      arXiv:{{ p.preprint }}.
     {% endif %}
 
     {% if p.preprint and p.journal %}
-      Available at
+      Also available at
       <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
         arXiv:{{ p.preprint }}
       </a>.
-    {% endif %}
-
-    {% if p.doi %}
-      <a href="https://doi.org/{{ p.doi }}" target="_blank">DOI</a>.
     {% endif %}
 
   </li>
@@ -64,17 +55,15 @@ title: Papers
 </ol>
 
 
-<!-- ============================= -->
 <!-- Notes -->
-<!-- ============================= -->
 {% assign notes = site.data.publications | where: "note", true %}
 {% if notes.size > 0 %}
 <h3>Notes</h3>
 
 <ol class="paper-list">
 
-  {% for n in notes %}
-  <li>
+{% for n in notes %}
+  <li class="paper">
 
     {% if n.authors and n.authors != "" %}
       ({{ n.authors }})
@@ -91,23 +80,21 @@ title: Papers
     {% endif %}
 
   </li>
-  {% endfor %}
+{% endfor %}
 
 </ol>
 {% endif %}
 
 
-<!-- ============================= -->
 <!-- Theses -->
-<!-- ============================= -->
 {% assign theses = site.data.publications | where: "type", "thesis" %}
 {% if theses.size > 0 %}
 <h3>Theses</h3>
 
 <ol class="paper-list">
 
-  {% for t in theses %}
-  <li>
+{% for t in theses %}
+  <li class="paper">
 
     {{ t.title }}.
 
@@ -120,10 +107,9 @@ title: Papers
     {% endif %}
 
   </li>
-  {% endfor %}
+{% endfor %}
 
 </ol>
 {% endif %}
-
 
 <p><a href="/">← Back to Home</a></p>
