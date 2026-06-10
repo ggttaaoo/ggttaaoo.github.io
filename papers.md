@@ -5,21 +5,28 @@ title: Papers
 
 <h2>Papers</h2>
 
-<!-- Publications -->
-{% assign publications = site.data.publications | where_exp: "p", "p.journal" %}
-{% if publications.size > 0 %}
-<section class="publications">
-  <h3>Publications</h3>
+<!-- ============================= -->
+<!-- Publications + Preprints -->
+<!-- ============================= -->
+<h3>Publications and Preprints</h3>
 
-  <ul class="paper-list">
-    {% for p in publications %}
-    <li>
+<ul class="paper-list">
 
-      {% if p.authors and p.authors != "" %}
+{% assign items = site.data.publications %}
+
+{% for p in items %}
+
+  {% unless p.note or p.type == "thesis" %}
+
+  <li>
+
+    {% if p.authors and p.authors != "" %}
       ({{ p.authors }})
-      {% endif %}
+    {% endif %}
 
-      <em>{{ p.title }}</em>.
+    {{ p.title }}.
+
+    {% if p.journal %}
 
       {% if p.status == "to appear" %}
         To appear in <em>{{ p.journal }}</em>.
@@ -30,102 +37,90 @@ title: Papers
         {% if p.pages %}, {{ p.pages }}{% endif %}.
       {% endif %}
 
-      {% if p.preprint %}
-        Also available at
-        <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
-          arXiv:{{ p.preprint }}
-        </a>.
-      {% endif %}
+    {% else %}
+      arXiv:{{ p.preprint }}.
+    {% endif %}
 
-      {% if p.doi %}
-        <a href="https://doi.org/{{ p.doi }}" target="_blank">DOI</a>.
-      {% endif %}
-
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-
-<!-- Preprints -->
-{% assign preprints = site.data.publications | where_exp: "p", "p.preprint and p.journal == nil" %}
-{% if preprints.size > 0 %}
-<section class="preprints">
-  <h3>Preprints</h3>
-
-  <ul class="paper-list">
-    {% for p in preprints %}
-    <li>
-
-      {% if p.authors and p.authors != "" %}
-      ({{ p.authors }})
-      {% endif %}
-
-      <em>{{ p.title }}</em>,
+    {% if p.preprint and p.journal %}
+      Also available at
       <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
         arXiv:{{ p.preprint }}
       </a>.
+    {% endif %}
 
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
+    {% if p.doi %}
+      <a href="https://doi.org/{{ p.doi }}" target="_blank">DOI</a>.
+    {% endif %}
 
+  </li>
+
+  {% endunless %}
+
+{% endfor %}
+
+</ul>
+
+
+<!-- ============================= -->
 <!-- Notes -->
+<!-- ============================= -->
 {% assign notes = site.data.publications | where: "note", true %}
 {% if notes.size > 0 %}
-<section class="notes">
-  <h3>Notes</h3>
+<h3>Notes</h3>
 
-  <ul class="paper-list">
-    {% for n in notes %}
-    <li>
+<ul class="paper-list">
 
-      {% if n.authors and n.authors != "" %}
-      {{ n.authors }}.
-      {% endif %}
+  {% for n in notes %}
+  <li>
 
-      <em>{{ n.title }}</em>.
+    {% if n.authors and n.authors != "" %}
+      ({{ n.authors }})
+    {% endif %}
 
-      {% if n.year %}
+    {{ n.title }}.
+
+    {% if n.year %}
       {{ n.year }}.
-      {% endif %}
+    {% endif %}
 
-      {% if n.file_link %}
+    {% if n.file_link %}
       <a href="{{ n.file_link }}" target="_blank">PDF</a>.
-      {% endif %}
+    {% endif %}
 
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+  </li>
+  {% endfor %}
+
+</ul>
 {% endif %}
 
+
+<!-- ============================= -->
 <!-- Theses -->
+<!-- ============================= -->
 {% assign theses = site.data.publications | where: "type", "thesis" %}
 {% if theses.size > 0 %}
-<section class="theses">
-  <h3>Theses</h3>
+<h3>Theses</h3>
 
-  <ul class="paper-list">
-    {% for t in theses %}
-    <li>
+<ul class="paper-list">
 
-      <em>{{ t.title }}</em>.
+  {% for t in theses %}
+  <li>
 
-      {% if t.degree %}
+    {{ t.title }}.
+
+    {% if t.degree %}
       {{ t.degree }}.
-      {% endif %}
+    {% endif %}
 
-      {% if t.year %}
+    {% if t.year %}
       {{ t.year }}.
-      {% endif %}
+    {% endif %}
 
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+  </li>
+  {% endfor %}
+
+</ul>
 {% endif %}
+
 
 <p><a href="/">← Back to Home</a></p>
