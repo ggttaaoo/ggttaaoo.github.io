@@ -42,6 +42,13 @@ title: Papers
       </a>.
     {% endif %}
 
+    {% if p.preprint and p.journal %}
+      Available at
+      <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
+        arXiv:{{ p.preprint }}
+      </a>.
+    {% endif %}
+
   </li>
 
   {% endunless %}
