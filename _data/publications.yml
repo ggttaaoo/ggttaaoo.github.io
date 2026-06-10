@@ -1,44 +1,29 @@
-# -------------------------
-# Preprints
-# -------------------------
-- title: "Homotopy types of toric orbifolds from Weyl polytopes"
-  authors: "Tao Gong"
-  year: 2024
-  preprint: "2407.16070"
+- title: "On invariants of representations of Weyl groups associated with the cohomology of toric varieties"
+  preprint: "2602.2363"
+
 
 - title: "Toric varieties modulo reflections"
-  authors: "Colin Crowley, Tao Gong, Connor Simpson"
-  year: 2024
+  authors: "with Colin Crowley and Connor Simpson"
   preprint: "2410.14653"
 
-- title: "On invariants of representations of Weyl groups associated with the cohomology of toric varieties"
-  authors: "Tao Gong"
-  year: 2026
-  preprint: "2602.23631"  
 
-# -------------------------
-# Notes
-# -------------------------
+- title: "Homotopy types of toric orbifolds from Weyl polytopes"
+  journal: "Homology, Homotopy and Applications"
+  status: "to appear"
+  preprint: "2407.16070"
+
+
 - title: "Strict Fundamental Domain for Group Actions"
-  authors: "."
   year: 2025
   note: true
   file_link: "/assets/papers/strict_fundamental_domain.pdf"
 
-# -------------------------
-# Theses
-# -------------------------
 - title: "Integral Cohomology of Classifying Spaces of Projective Unitary Groups"
-  authors: "Tao Gong"
-  year: 2022
   type: "thesis"
   degree: "Master's Thesis"
+  year: 2022
 
 - title: "Cohomology of Classifying Spaces of Rank-Two Kac--Moody Groups of Finite Type"
-  authors: "Tao Gong"
-  year: 2019
   type: "thesis"
   degree: "Bachelor's Thesis"
-
-
- 
+  year: 2019
