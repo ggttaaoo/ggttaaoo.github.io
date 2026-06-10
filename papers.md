@@ -22,7 +22,7 @@ title: Papers
       ({{ p.authors }})
     {% endif %}
 
-    {{ p.title }}.
+    <strong>{{ p.title }}</strong>.
 
     {% if p.journal %}
 
@@ -36,11 +36,14 @@ title: Papers
       {% endif %}
 
     {% else %}
-      arXiv:{{ p.preprint }}.
+      Available at
+      <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
+        arXiv:{{ p.preprint }}
+      </a>.
     {% endif %}
 
     {% if p.preprint and p.journal %}
-      Also available at
+      Available at
       <a href="https://arxiv.org/abs/{{ p.preprint }}" target="_blank">
         arXiv:{{ p.preprint }}
       </a>.
@@ -69,7 +72,7 @@ title: Papers
       ({{ n.authors }})
     {% endif %}
 
-    {{ n.title }}.
+    <strong>{{ n.title }}</strong>.
 
     {% if n.year %}
       {{ n.year }}.
@@ -96,7 +99,7 @@ title: Papers
 {% for t in theses %}
   <li class="paper">
 
-    {{ t.title }}.
+    <strong>{{ t.title }}</strong>.
 
     {% if t.degree %}
       {{ t.degree }}.
