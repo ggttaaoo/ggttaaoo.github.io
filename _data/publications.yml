@@ -1,3 +1,13 @@
+- title: "A counterexample to cohomological rigidity of toric manifolds"
+  authors: "with Yingxin Li"
+  year: 2026
+  preprint: "2609.39707"
+
+- title: "On sections of quotient maps by isometries"
+  authors: "with Suyoung Choi"
+  year: 2026
+  preprint: "2609.26452"
+
 - title: "On invariants of representations of Weyl groups associated with the cohomology of toric varieties"
   authors: ""
   year: 2026
@@ -17,11 +27,6 @@
   status: "to appear"
   preprint: "2407.16070"
 
-
-- title: "Strict fundamental domain for group actions"
-  year: 2025
-  note: true
-  file_link: "/assets/papers/strict_fundamental_domain.pdf"
 
 - title: "Integral cohomology of classifying spaces of projective unitary groups"
   type: "thesis"
